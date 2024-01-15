@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09_입력관련태그</title>
+</head>
+<body>
+
+    <input>
+    <input type="text">
+
+
+    <pre>
+        size
+        maxla
+        placeholder
+    </pre>
+
+    아이디 : <input type="text" size="15" maxlength="15" placeholder="아이디 입력">
+
+    <hr>
+
+    <h4>type="password"</h4>
+    비밀번호 : <input type="password" placeholder="비밀번호 입력">
+
+
+    <hr>
+    
+
+    <p>주소 입력 시 사용하는 입력 상자</p>
+    홈페이지 : <input type="url" value="https://">
+
+
+    <hr>
+
+    <p>전화번호</p>
+    전화번호 : <input type="tel" placeholder="'-' 기호 포함">
+
+
+    <hr>
+
+    <p>이메일 입력 시 사용하는 입력상자</p>
+    이메일 : <input type="email">
+
+    <hr>
+
+    <pre>
+        <h3>숫자 관련 태그 공용 속성</h3>
+        min
+        max
+        step
+    </pre>
+
+    <h4>type="number"</h4>
+    <p>
+        숫자만 입력할 수 있는 입력상자<br>
+        브라우저에 따라 스핀박스 표시되기도 함.
+    </p>
+
+    점수입력 : <input type="number" step="10" min="0" max="100">
+
+    <hr>
+
+    <input type="range" min="10" max="100" step="15">
+
+    <hr><hr><hr>
+
+    <input type="date"><br>
+    <input type="month"><br>
+    <input type="week"><br>
+    <input type="time"><br>
+    <input type="datetime-local"><br>
+
+    <hr><hr><hr>
+
+    radio : <input type="radio">
+    <br>
+    checkbox : <input type="checkbox">
+
+    <h4>type="radio"</h4>
+
+    팀 선택<br>
+    
+    <label for="a-team">A팀</label><input type="radio" name="team" id="a-team">
+    <label>b팀</label><input type="radio" name="team">
+    <input type="radio" name="team"><label>c팀</label>
+
+
+    <h5>취미선택</h5>
+
+    <input type="checkbox" name="hobby" id="baseball"><label for="baseball">농구</label>
+    <input type="checkbox" name="hobby" id="soccor"><label for="soccor">축구</label>
+    <input type="checkbox" name="hobby"><label>야구</label>
+
+    <label>
+        <input type="checkbox"> 뜨개질
+    </label>
+
+    <hr>
+    <hr>
+    <hr>
+
+    type="color" : <input type="color"> <br>
+    type="file" : <input type="file"> <br>
+    type="hidden" : <input type="hidden" value="값이 사라짐"> <br>
+
+    <hr>
+
+    <form>
+        아이디 : <input type="text" name="id" value="user01">
+        비밀번호 : <input type="password" name="pw">
+
+        <button type="button">제출</button>
+    </form>
+
+
+
+    <hr>
+
+    <h3>form 예시 2</h3>
+
+    <form action="07_이미지관련태그.html" target="_blank" method="get">
+    <input type="checkbox" name="hobby" id="baseball"><label for="baseball">농구</label>
+    <input type="checkbox" name="hobby" id="soccor"><label for="soccor">축구</label>
+    <input type="checkbox" name="hobby"><label>야구</label>
+
+    <button>제출</button>
+
+    </form>
+
+
+    <br><br><br>
+
+    <form>
+        <input>
+        <button type="reset">초기화</button>
+    </form>
+
+    <br>
+
+    <button type="button" id="btn">무기능 버튼</button>
+
+    <script>
+        //자바스크립트 영역
+
+        document.getElementById("btn").addEventListener("click" , function() {
+            //click 했을 때 어떤 기능을 수행할 지 작성
+            alert("경고");
+        })
+    </script>
+
+
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>로그인형식</legend>
+            아이디 : <input> <br>
+            비밀번호 : <input type="password">
+        </fieldset>
+    </form>
+
+
+    <hr>
+    <hr>
+    <hr>
+
+    <textarea rows="5" cols="70" style="resize: none;" 
+        placeholder="최대 500자"
+    ></textarea>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <form>
+        <select name="test">
+            <option value="1">선택1</option>
+            <option>선택2</option>
+            <option selected>선택3</option>
+            <option>선택4</option>
+            <option>선택5</option>
+        </select>
+
+        <button>제출</button>
+    </form>
+
+
+    <input type="checkbox" checked>
+    <input type="radio" checked>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+
+    
+</body>
+</html>
